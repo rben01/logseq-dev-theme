@@ -1,18 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Source+Code+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-// SIL Open Font License 1.1 (OFL) for Source Sans Fonts
-// https://github.com/adobe-fonts/source-sans/blob/release/LICENSE.md
-@import url("https://cdn.jsdelivr.net/gh/adobe-fonts/source-sans@3.046R/source-sans-3VF.css");
-
-// Custom Source Han Sans VF fonts for Simplified Chinese
-@font-face {
-  font-family: "Source Han Sans VF";
-  font-weight: 200 900;
-  font-style: normal;
-  font-stretch: normal;
-  // The following is 8MB even after compression
-  src: url("https://cdn.jsdelivr.net/gh/adobe-fonts/source-han-sans@release/Variable/WOFF2/OTF/Subset/SourceHanSansCN-VF.otf.woff2");
-}
 
 @font-face {
   font-family: "Only Emoji";
@@ -58,10 +45,10 @@
 :root {
   --ct-text-size: 16px;
   --ct-line-height: 1.6;
-  --ls-font-family: "Only Emoji", "Source Sans 3 VF", "Source Han Sans VF",
+  --ls-font-family: "Only Emoji", "IBM Plex Sans",
     sans-serif;
-  --ct-page-title-font-family: var(--ls-font-family);
-  --ct-code-font-family: "Fira Code", monospace;
+  --ct-page-title-font-family: "Lato", var(--ls-font-family);
+  --ct-code-font-family: "Source Code Pro", monospace;
 }
 
 html,
@@ -77,7 +64,6 @@ textarea {
   line-height: var(--ct-line-height);
 }
 
-// Source Han Sans VF does not support italic
 i {
-  font-family: "Only Emoji", "Source Sans 3 VF", sans-serif;
+  font-family: var(--ls-font-family);
 }

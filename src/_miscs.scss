@@ -1,3 +1,5 @@
+@import url("https://codemirror.net/theme/ayu-dark.css");
+
 :root {
   --ct-inline-code-font-size: 0.8em;
   --ct-inline-code-font-style: inherit;
@@ -36,9 +38,17 @@ strong {
 }
 
 /* External links */
-.external-link,
-.external-link:hover {
+.external-link {
   color: var(--ls-external-link-color);
+}
+
+.external-link::before {
+  content: "🔗";
+  margin-right: 4px;
+}
+
+.external-link:hover  {
+  color: var(--ls-external-link-hover-color)
 }
 
 .external-link:hover {
@@ -144,14 +154,6 @@ progress::-webkit-progress-value {
   background: var(--ct-success-color);
 }
 
-.cm-s-solarized.cm-s-dark {
-  background: var(--ls-secondary-background-color) !important;
-}
-
-.cm-s-solarized.cm-s-dark .CodeMirror-gutters {
-  background: var(--ls-tertiary-background-color) !important;
-}
-
 .CodeMirror pre.CodeMirror-line,
 .CodeMirror-gutter,
 .CodeMirror-gutters,
@@ -163,7 +165,7 @@ progress::-webkit-progress-value {
   line-height: 16px;
 }
 
-.cm-s-solarized div.CodeMirror-selected {
+.cm-s-ayu-dark div.CodeMirror-selected {
   background: var(--ct-primary-color);
   color: var(--ls-selection-color);
 }
@@ -173,7 +175,7 @@ progress::-webkit-progress-value {
   box-shadow: 0 0 0 2px var(--color-level-2);
 }
 
-.cm-s-solarized div.CodeMirror-selected {
+.cm-s-ayu-dark div.CodeMirror-selected {
   background: var(--color-level-4) !important;
 }
 

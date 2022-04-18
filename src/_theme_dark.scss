@@ -17,7 +17,7 @@ html[data-theme="dark"] {
   --color-level-5: #606e7a;
   --color-level-6: #697885;
 
-  --ls-primary-background-color: #272c35;
+  --ls-primary-background-color: #1f2126;
   --ls-secondary-background-color: var(--color-level-1);
   --ls-tertiary-background-color: var(--color-level-2);
   --ls-quaternary-background-color: var(--color-level-3);
@@ -38,6 +38,7 @@ html[data-theme="dark"] {
   --ls-active-primary-color: var(--ct-primary-color);
   --ls-active-secondary-color: var(--ct-secondary-color);
   --ls-external-link-color: var(--ct-secondary-color);
+  --ls-external-link-hover-color: var(--ct-primary-color);
 
   --ls-guideline-color: var(--ls-tertiary-background-color);
   --ls-block-bullet-color: var(--ls-tertiary-background-color);
