@@ -213,6 +213,14 @@ html.is-native-iphone #left-sidebar {
   margin-top: 0.5em;
 }
 
+#journals .journal .foldable-title h1.title::before {
+  content: "🗓";
+  vertical-align: text-bottom;
+  margin-right: 8px;
+  font-size: 0.8em;
+  font-weight: normal;
+}
+
 #left-sidebar {
   height: 100%;
   padding-top: var(--ct-header-height);
@@ -1066,6 +1074,7 @@ html[data-theme=dark] {
   --ls-active-primary-color: var(--ct-primary-color);
   --ls-active-secondary-color: var(--ct-secondary-color);
   --ls-external-link-color: var(--ct-secondary-color);
+  --ls-external-link-hover-color: var(--ct-primary-color);
   --ls-guideline-color: var(--ls-tertiary-background-color);
   --ls-block-bullet-color: var(--ls-tertiary-background-color);
   --ls-bullet-closed-color: var(--ls-secondary-text-color);
