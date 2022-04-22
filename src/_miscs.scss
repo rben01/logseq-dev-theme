@@ -1,9 +1,9 @@
 @import url("https://codemirror.net/theme/ayu-dark.css");
 
 :root {
-  --ct-inline-code-font-size: 0.8em;
+  --ct-inline-code-font-size: 0.9em;
   --ct-inline-code-font-style: inherit;
-  --ct-inline-code-border-radius: 2px;
+  --ct-inline-code-border-radius: 4px;
   --ct-inline-code-padding: 2px 5px;
 }
 
@@ -161,11 +161,12 @@ progress::-webkit-progress-value {
 .CodeMirror-scroll,
 .CodeMirror-sizer,
 .CodeMirror {
-  font-size: 12px;
+  font-family: var(--ct-code-font-family);
+  font-size: 1rem;
   line-height: 16px;
 }
 
-.cm-s-ayu-dark div.CodeMirror-selected {
+div.CodeMirror-selected {
   background: var(--ct-primary-color);
   color: var(--ls-selection-color);
 }
@@ -175,9 +176,9 @@ progress::-webkit-progress-value {
   box-shadow: 0 0 0 2px var(--color-level-2);
 }
 
-.cm-s-ayu-dark div.CodeMirror-selected {
-  background: var(--color-level-4) !important;
-}
+// .cm-s-ayu-dark div.CodeMirror-selected {
+//   background: var(--color-level-4) !important;
+// }
 
 
 .extensions__code {

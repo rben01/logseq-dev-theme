@@ -45,9 +45,9 @@
 :root {
   --ct-text-size: 16px;
   --ct-line-height: 1.6;
-  --ls-font-family: "Only Emoji", "IBM Plex Sans",
-    sans-serif;
+  --ls-font-family: "Only Emoji", "IBM Plex Sans", sans-serif;
   --ct-page-title-font-family: "Lato", var(--ls-font-family);
+  --ct-block-ref-font-family: var(--ct-page-title-font-family);
   --ct-code-font-family: "Source Code Pro", monospace;
 }
 

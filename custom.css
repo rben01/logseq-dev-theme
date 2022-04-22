@@ -9,9 +9,9 @@
 :root {
   --ct-text-size: 16px;
   --ct-line-height: 1.6;
-  --ls-font-family: "Only Emoji", "IBM Plex Sans",
-    sans-serif;
+  --ls-font-family: "Only Emoji", "IBM Plex Sans", sans-serif;
   --ct-page-title-font-family: "Lato", var(--ls-font-family);
+  --ct-block-ref-font-family: var(--ct-page-title-font-family);
   --ct-code-font-family: "Source Code Pro", monospace;
 }
 
@@ -604,7 +604,7 @@ a:hover > .bullet-container .bullet {
 }
 
 .block-control:hover svg {
-  filter: drop-shadow(2px 4px 6px black);
+  transform: scale(1.1);
 }
 
 .block-control .rotating-arrow {
@@ -721,9 +721,9 @@ a:hover > .bullet-container .bullet {
   }
 }
 :root {
-  --ct-inline-code-font-size: 0.8em;
+  --ct-inline-code-font-size: 0.9em;
   --ct-inline-code-font-style: inherit;
-  --ct-inline-code-border-radius: 2px;
+  --ct-inline-code-border-radius: 4px;
   --ct-inline-code-padding: 2px 5px;
 }
 
@@ -877,11 +877,12 @@ progress::-webkit-progress-value {
 .CodeMirror-scroll,
 .CodeMirror-sizer,
 .CodeMirror {
-  font-size: 12px;
+  font-family: var(--ct-code-font-family);
+  font-size: 1rem;
   line-height: 16px;
 }
 
-.cm-s-ayu-dark div.CodeMirror-selected {
+div.CodeMirror-selected {
   background: var(--ct-primary-color);
   color: var(--ls-selection-color);
 }
@@ -889,10 +890,6 @@ progress::-webkit-progress-value {
 .CodeMirror {
   background-color: var(--color-level-1);
   box-shadow: 0 0 0 2px var(--color-level-2);
-}
-
-.cm-s-ayu-dark div.CodeMirror-selected {
-  background: var(--color-level-4) !important;
 }
 
 .extensions__code {
