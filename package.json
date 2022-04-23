@@ -1,7 +1,7 @@
 {
 	"name": "logseq-dev-theme-rben01",
 	"author": "rben01",
-	"version": "2.0.4",
+	"version": "2.1.0",
 	"description": "A custom theme for dev",
 	"logseq": {
 		"themes": [
@@ -15,7 +15,7 @@
 				"description": "Dev theme without bullet threading"
 			}
 		],
-		"id": "rben01_dev_theme",
+		"id": "pengx17_dev_theme",
 		"icon": "./logo.png"
 	},
 	"scripts": {

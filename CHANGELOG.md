@@ -1,3 +1,60 @@
+## [1.25.11](https://github.com/pengx17/logseq-dev-theme/compare/v1.25.10...v1.25.11) (2022-04-21)
+
+
+### Bug Fixes
+
+* remove large padding ([326d306](https://github.com/pengx17/logseq-dev-theme/commit/326d306ed1361b306895a2b44803893ce88b0931))
+
+## [1.25.10](https://github.com/pengx17/logseq-dev-theme/compare/v1.25.9...v1.25.10) (2022-04-21)
+
+
+### Bug Fixes
+
+* remove backdrop-filter for headers ([45788a6](https://github.com/pengx17/logseq-dev-theme/commit/45788a6f9b87655eefba60f7635d115f84c4ce3c))
+
+## [1.25.9](https://github.com/pengx17/logseq-dev-theme/compare/v1.25.8...v1.25.9) (2022-04-21)
+
+
+### Bug Fixes
+
+* journal load issue ([20498fd](https://github.com/pengx17/logseq-dev-theme/commit/20498fdda9a651dfca535ac172f1fd2b3d864f78))
+
+## [1.25.8](https://github.com/pengx17/logseq-dev-theme/compare/v1.25.7...v1.25.8) (2022-04-21)
+
+
+### Reverts
+
+* Revert "fix: journal page load issue" ([0b341ea](https://github.com/pengx17/logseq-dev-theme/commit/0b341ead0f8f9e4d4c7e7873066e9c159246df45))
+
+## [1.25.7](https://github.com/pengx17/logseq-dev-theme/compare/v1.25.6...v1.25.7) (2022-04-21)
+
+
+### Bug Fixes
+
+* journal page load issue ([071c295](https://github.com/pengx17/logseq-dev-theme/commit/071c29507959d4a3c7601b9a845abf58078c43fb))
+
+## [1.25.6](https://github.com/pengx17/logseq-dev-theme/compare/v1.25.5...v1.25.6) (2022-04-20)
+
+
+### Bug Fixes
+
+* solid left border in doc mod ([c94113b](https://github.com/pengx17/logseq-dev-theme/commit/c94113bd8acb6ff9443e53a6cbdf301bba036722))
+
+## [1.25.5](https://github.com/pengx17/logseq-dev-theme/compare/v1.25.4...v1.25.5) (2022-04-20)
+
+
+### Bug Fixes
+
+* #main-container min height ([4623f47](https://github.com/pengx17/logseq-dev-theme/commit/4623f4781778de591154e7c1028188baa1d86814))
+
+## [1.25.4](https://github.com/pengx17/logseq-dev-theme/compare/v1.25.3...v1.25.4) (2022-04-20)
+
+
+### Bug Fixes
+
+* build is missing no_bullet_threading.css ([5b4a2b1](https://github.com/pengx17/logseq-dev-theme/commit/5b4a2b15db66edee5d9816a190d68d444f0978b9))
+* dates in date picker is not visible ([6cede63](https://github.com/pengx17/logseq-dev-theme/commit/6cede636f8b3ee42e649b4439a95dc456af75c94)), closes [#50](https://github.com/pengx17/logseq-dev-theme/issues/50)
+
 ## [1.25.3](https://github.com/pengx17/logseq-dev-theme/compare/v1.25.2...v1.25.3) (2022-04-18)
 
 
