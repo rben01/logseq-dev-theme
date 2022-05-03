@@ -853,7 +853,7 @@ progress::-webkit-progress-value {
 .CodeMirror-sizer,
 .CodeMirror {
   font-family: var(--ct-code-font-family);
-  font-size: 1rem;
+  font-size: 0.95rem;
   line-height: 16px;
 }
 
