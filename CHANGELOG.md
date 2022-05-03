@@ -1,3 +1,59 @@
+## [1.26.3](https://github.com/pengx17/logseq-dev-theme/compare/v1.26.2...v1.26.3) (2022-05-02)
+
+
+### Bug Fixes
+
+* date picker text color in dark mode ([5e3ec8f](https://github.com/pengx17/logseq-dev-theme/commit/5e3ec8f124afcefc1af81c8002f1a76804440f69))
+
+## [1.26.2](https://github.com/pengx17/logseq-dev-theme/compare/v1.26.1...v1.26.2) (2022-04-30)
+
+
+### Bug Fixes
+
+* a workaround for draw offset ([1a10135](https://github.com/pengx17/logseq-dev-theme/commit/1a10135e9a826451d8901078f2389bc62322d226))
+
+## [1.26.1](https://github.com/pengx17/logseq-dev-theme/compare/v1.26.0...v1.26.1) (2022-04-27)
+
+
+### Bug Fixes
+
+* default active threading color ([2aa32d1](https://github.com/pengx17/logseq-dev-theme/commit/2aa32d16b4330e77966b9a8350b013f04b200126))
+
+# [1.26.0](https://github.com/pengx17/logseq-dev-theme/compare/v1.25.16...v1.26.0) (2022-04-27)
+
+
+### Features
+
+* allow users to overwrite the threading color in plugin ([218a1d8](https://github.com/pengx17/logseq-dev-theme/commit/218a1d86d8bdde7e7d865ba28d7346e13228abec))
+
+## [1.25.16](https://github.com/pengx17/logseq-dev-theme/compare/v1.25.15...v1.25.16) (2022-04-25)
+
+
+### Bug Fixes
+
+* edit layout shift issue ([8926098](https://github.com/pengx17/logseq-dev-theme/commit/89260981146c545c25dab5d38e98367c1d87dfe1))
+
+## [1.25.15](https://github.com/pengx17/logseq-dev-theme/compare/v1.25.14...v1.25.15) (2022-04-25)
+
+
+### Bug Fixes
+
+* fix previous not properly ([a12e47e](https://github.com/pengx17/logseq-dev-theme/commit/a12e47e3f66f5a8ba94ad7e7f2415042147584ea))
+
+## [1.25.14](https://github.com/pengx17/logseq-dev-theme/compare/v1.25.13...v1.25.14) (2022-04-25)
+
+
+### Bug Fixes
+
+* block content sometimes overflow ([61ee122](https://github.com/pengx17/logseq-dev-theme/commit/61ee1222515088a95d503aa478bb17e79aec14fd))
+
+## [1.25.13](https://github.com/pengx17/logseq-dev-theme/compare/v1.25.12...v1.25.13) (2022-04-25)
+
+
+### Bug Fixes
+
+* multiline threading sometimes got covered ([4c8067c](https://github.com/pengx17/logseq-dev-theme/commit/4c8067c7ed88dd18234dae9ef9841bfef625fa24))
+
 ## [1.25.12](https://github.com/pengx17/logseq-dev-theme/compare/v1.25.11...v1.25.12) (2022-04-23)
 
 
