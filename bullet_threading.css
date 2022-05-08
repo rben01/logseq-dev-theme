@@ -45,8 +45,8 @@
 }
 
 .block-content-wrapper > div:first-child {
-  padding: 1px;
-  margin: -1px;
+  padding: 0;
+  margin: 0;
   overflow-x: auto;
 }
 
@@ -54,7 +54,7 @@
   height: 14px !important;
   width: 14px !important;
   position: relative;
-  transform: translate(1px, -1px);
+  transform: translate(2px, -1px);
 }
 
 /* Block bullet path should only show in a nested block */
@@ -85,7 +85,7 @@
 .ls-block .ls-block > div > div.items-center::before {
   pointer-events: none;
   content: "";
-  left: calc(var(--ls-block-bullet-threading-width) * -1);
+  left: calc(var(--ls-block-bullet-threading-width) * -1 + 1px);
   right: 6px;
   top: calc(-50% + var(--ls-block-bullet-threading-width) * 0.5 - 1px);
   bottom: 50%;
@@ -104,7 +104,7 @@
   top: -1rem;
   bottom: 0;
   border-left: var(--ls-block-bullet-threading-width) solid transparent;
-  left: calc(var(--ls-block-bullet-threading-width) * -1);
+  left: calc(var(--ls-block-bullet-threading-width) * -1 + 1px);
   position: absolute;
 }
 .ls-block .block-children:focus-within > .ls-block:not(:focus-within)::before {
