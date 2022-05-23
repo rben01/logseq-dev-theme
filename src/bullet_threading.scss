@@ -89,7 +89,7 @@
 	.ls-block > div > div.items-center::before {
 		pointer-events: none;
 		content: "";
-		left: calc(var(--ls-block-bullet-threading-width) * -1);
+		left: calc(var(--ls-block-bullet-threading-width) * -1 + 1px);
 		right: 6px;
 		top: calc(-50% + var(--ls-block-bullet-threading-width) * 0.5 - 1px);
 		bottom: 50%;
@@ -104,13 +104,14 @@
 		border-color: var(--ls-block-bullet-active-color);
 	}
 
+	// Vertical line that spans multiple blocks
 	.block-children > .ls-block::before {
 		pointer-events: none;
 		content: "";
 		top: -1rem;
 		bottom: 0;
 		border-left: var(--ls-block-bullet-threading-width) solid transparent;
-		left: calc(var(--ls-block-bullet-threading-width) * -1);
+		left: calc(var(--ls-block-bullet-threading-width) * -1 + 1px);
 		position: absolute;
 	}
 
