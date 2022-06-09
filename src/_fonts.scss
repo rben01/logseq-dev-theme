@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=family=Source+Code+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,900;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Radio+Canada:ital,wght@0,300;0,350;0,700;1,300;1,350;1,700&family=Source+Code+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 
 @font-face {
   font-family: "Only Emoji";
@@ -42,7 +42,7 @@
 :root {
   --ct-text-size: 17px;
   --ct-line-height: 1.5;
-  --ls-font-family: "Only Emoji", "Source Sans Pro", sans-serif;
+  --ls-font-family: "Only Emoji", "Radio Canada", "Source Sans Pro", sans-serif;
   --ct-page-title-font-family: var(--ls-font-family);
   --ct-block-ref-font-family: var(--ct-page-title-font-family);
   --ct-code-font-family: "Source Code Pro", monospace;
@@ -55,6 +55,7 @@ body {
   overscroll-behavior-y: none;
   -webkit-font-smoothing: auto;
   line-height: var(--ct-line-height);
+  font-weight: 350;
 }
 
 textarea {
