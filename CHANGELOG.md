@@ -1,3 +1,38 @@
+## [1.26.10](https://github.com/pengx17/logseq-dev-theme/compare/v1.26.9...v1.26.10) (2022-06-09)
+
+
+### Bug Fixes
+
+* query header display issue ([871c3dc](https://github.com/pengx17/logseq-dev-theme/commit/871c3dc18687131eed69f9fd6213e80716cff2f0))
+
+## [1.26.9](https://github.com/pengx17/logseq-dev-theme/compare/v1.26.8...v1.26.9) (2022-06-06)
+
+
+### Bug Fixes
+
+* some color fixes ([2b99bad](https://github.com/pengx17/logseq-dev-theme/commit/2b99bad9f054185af17d5fa2328f548c83bc2b13))
+
+## [1.26.8](https://github.com/pengx17/logseq-dev-theme/compare/v1.26.7...v1.26.8) (2022-06-05)
+
+
+### Bug Fixes
+
+* query header display issue ([1244cdf](https://github.com/pengx17/logseq-dev-theme/commit/1244cdfd196aebfbaf95ade6ec3cbb61b13a3e96))
+
+## [1.26.7](https://github.com/pengx17/logseq-dev-theme/compare/v1.26.6...v1.26.7) (2022-05-20)
+
+
+### Bug Fixes
+
+* bullet threading issue on small screens ([100557b](https://github.com/pengx17/logseq-dev-theme/commit/100557b9b99541de476fc85c1a5cbc0b97317999))
+
+## [1.26.6](https://github.com/pengx17/logseq-dev-theme/compare/v1.26.5...v1.26.6) (2022-05-19)
+
+
+### Bug Fixes
+
+* add link row style ([a4c5ede](https://github.com/pengx17/logseq-dev-theme/commit/a4c5ede4f1bbc44a52d40707748fe63fe2b89b85))
+
 ## [1.26.5](https://github.com/pengx17/logseq-dev-theme/compare/v1.26.4...v1.26.5) (2022-05-12)
 
 

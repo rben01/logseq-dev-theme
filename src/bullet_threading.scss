@@ -154,9 +154,9 @@
 
 // Fix https://github.com/pengx17/logseq-plugin-bullet-threading/issues/1
 @media (max-width: 640px) {
-	.ls-block[haschild="true"] > div > .block-content-wrapper::before {
-		left: -11px;
-	}
+  .ls-block[haschild] > div > .block-content-wrapper::before {
+    left: -11px;
+  }
 }
 
 /* Disable for doc mode */
