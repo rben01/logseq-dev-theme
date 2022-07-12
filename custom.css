@@ -758,11 +758,6 @@ strong {
   color: var(--ls-external-link-color);
 }
 
-.external-link::before {
-  content: "🔗";
-  margin-right: 4px;
-}
-
 .external-link:hover {
   color: var(--ls-external-link-hover-color);
 }
