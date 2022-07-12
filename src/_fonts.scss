@@ -40,9 +40,9 @@
 }
 
 :root {
-  --ct-text-size: 17px;
+  --ct-text-size: 18px;
   --ct-line-height: 1.5;
-  --ls-font-family: "Only Emoji", "Radio Canada", "Source Sans Pro", sans-serif;
+  --ls-font-family: "Only Emoji", "Source Sans Pro", sans-serif;
   --ct-page-title-font-family: var(--ls-font-family);
   --ct-block-ref-font-family: var(--ct-page-title-font-family);
   --ct-code-font-family: "Source Code Pro", monospace;
@@ -55,7 +55,7 @@ body {
   overscroll-behavior-y: none;
   -webkit-font-smoothing: auto;
   line-height: var(--ct-line-height);
-  font-weight: 350;
+  font-weight: normal;
 }
 
 textarea {
