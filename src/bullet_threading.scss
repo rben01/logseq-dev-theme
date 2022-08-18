@@ -89,7 +89,7 @@
   .ls-block > div > div.items-center::before {
     pointer-events: none;
     content: "";
-    left: calc(var(--ls-block-bullet-threading-width) * -1 + 1px);
+    left: calc(var(--ls-block-bullet-threading-width) * -1 + 0.5px);
     right: 6px;
     top: calc(-50% + var(--ls-block-bullet-threading-width) * 0.5 - 1px);
     bottom: 50%;
@@ -111,7 +111,7 @@
     top: -1rem;
     bottom: 0;
     border-left: var(--ls-block-bullet-threading-width) solid transparent;
-    left: calc(var(--ls-block-bullet-threading-width) * -1 + 1px);
+    left: calc(var(--ls-block-bullet-threading-width) * -1 + 0.5px);
     position: absolute;
   }
 
