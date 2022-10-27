@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Source+Code+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Source+Code+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Source+Code+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap");
 
 @font-face {
   font-family: "Only Emoji";
@@ -42,10 +44,12 @@
 :root {
   --ct-text-size: 17px;
   --ct-line-height: 1.5;
-  --ls-font-family: "Only Emoji", "IBM Plex Sans", "Source Sans Pro", sans-serif;
+  --ct-font-weight: 400;
+  --ls-font-family: "Only Emoji", "Source Sans Pro", sans-serif;
   --ct-page-title-font-family: var(--ls-font-family);
   --ct-block-ref-font-family: var(--ct-page-title-font-family);
   --ct-code-font-family: "Source Code Pro", monospace;
+  --favicons: none; /* disable favicons provided by https://github.com/0x7b1/logseq-plugin-automatic-url-title */
 }
 
 html,
@@ -55,7 +59,8 @@ body {
   overscroll-behavior-y: none;
   -webkit-font-smoothing: auto;
   line-height: var(--ct-line-height);
-  font-weight: normal;
+  font-weight: var(--ct-font-weight);
+  font-variation-settings: "WDTH" 90;
 }
 
 textarea {

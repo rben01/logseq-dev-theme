@@ -1,7 +1,7 @@
 :root {
   --ct-page-title-color: var(--ct-bold-color);
   --ct-page-title-font-size: 36px;
-  --ct-page-title-line-height: 40px;
+  --ct-page-title-line-height: calc(1em + 5px);
   --ct-page-title-font-weight: 400;
   --ct-page-title-font-style: normal;
 
@@ -18,7 +18,8 @@
 
 /* Heading & Page title */
 h1.title {
-  margin-top: 8px;
+  // margin-top: 8px;
+  padding-bottom: unset;
   font-family: var(--ct-page-title-font-family);
   font-size: var(--ct-page-title-font-size);
   font-weight: var(--ct-page-title-font-weight);
@@ -103,10 +104,6 @@ a.title h1.title {
   opacity: 0.8;
 }
 
-.ls-block :is(h5, .h5):not(textarea) {
-  transform: translateY(-8px);
-}
-
 .ls-block .block-ref :is(h1, h2, h3, h4, h5) {
   font-size: 1em;
 }
@@ -128,6 +125,7 @@ a.title h1.title {
   opacity: 1;
 }
 
+/*
 .ls-block h1::after {
   content: "h1";
 }
@@ -147,3 +145,4 @@ a.title h1.title {
 .ls-block h5::after {
   content: "h5";
 }
+*/

@@ -1,10 +1,10 @@
 @import url("https://codemirror.net/theme/ayu-dark.css");
 
 :root {
-  --ct-inline-code-font-size: 0.9em;
+  --ct-inline-code-font-size: 0.85em;
   --ct-inline-code-font-style: inherit;
   --ct-inline-code-border-radius: 4px;
-  --ct-inline-code-padding: 2px 5px;
+  --ct-inline-code-padding: 2px 3px;
 }
 
 /* lists */
@@ -84,7 +84,7 @@ pre {
 
 /* inline code */
 
-:not(pre) > code {
+div :not(pre):not(mark) > code {
   font-family: var(--ct-code-font-family);
   font-weight: normal;
   font-size: var(--ct-inline-code-font-size);

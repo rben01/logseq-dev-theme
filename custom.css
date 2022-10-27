@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Source+Code+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Source+Code+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 @import url("https://codemirror.net/theme/ayu-dark.css");
 @font-face {
   font-family: "Only Emoji";
@@ -9,10 +9,13 @@
 :root {
   --ct-text-size: 17px;
   --ct-line-height: 1.5;
-  --ls-font-family: "Only Emoji", "IBM Plex Sans", "Source Sans Pro", sans-serif;
+  --ct-font-weight: 400;
+  --ls-font-family: "Only Emoji", "Source Sans Pro", sans-serif;
   --ct-page-title-font-family: var(--ls-font-family);
   --ct-block-ref-font-family: var(--ct-page-title-font-family);
   --ct-code-font-family: "Source Code Pro", monospace;
+  --favicons: none;
+  /* disable favicons provided by https://github.com/0x7b1/logseq-plugin-automatic-url-title */
 }
 
 html,
@@ -22,7 +25,8 @@ body {
   overscroll-behavior-y: none;
   -webkit-font-smoothing: auto;
   line-height: var(--ct-line-height);
-  font-weight: normal;
+  font-weight: var(--ct-font-weight);
+  font-variation-settings: "WDTH" 90;
 }
 
 textarea {
@@ -231,13 +235,13 @@ html.is-native-iphone #left-sidebar {
 
 .left-sidebar-inner .nav-content-item {
   font-size: 0.875rem;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 :root {
   --ct-page-title-color: var(--ct-bold-color);
   --ct-page-title-font-size: 36px;
-  --ct-page-title-line-height: 40px;
+  --ct-page-title-line-height: calc(1em + 5px);
   --ct-page-title-font-weight: 400;
   --ct-page-title-font-style: normal;
   --ct-heading-font-family: var(--ct-page-title-font-family);
@@ -252,7 +256,7 @@ html.is-native-iphone #left-sidebar {
 
 /* Heading & Page title */
 h1.title {
-  margin-top: 8px;
+  padding-bottom: unset;
   font-family: var(--ct-page-title-font-family);
   font-size: var(--ct-page-title-font-size);
   font-weight: var(--ct-page-title-font-weight);
@@ -337,10 +341,6 @@ a.title h1.title {
   opacity: 0.8;
 }
 
-.ls-block :is(h5, .h5):not(textarea) {
-  transform: translateY(-8px);
-}
-
 .ls-block .block-ref :is(h1, h2, h3, h4, h5) {
   font-size: 1em;
 }
@@ -362,6 +362,7 @@ a.title h1.title {
   opacity: 1;
 }
 
+/*
 .ls-block h1::after {
   content: "h1";
 }
@@ -381,7 +382,7 @@ a.title h1.title {
 .ls-block h5::after {
   content: "h5";
 }
-
+*/
 :root {
   --ls-block-bullet-active-color: var(
     --ls-block-bullet-threading-active-color-overwrite,
@@ -718,10 +719,10 @@ a:hover > .bullet-container .bullet {
   }
 }
 :root {
-  --ct-inline-code-font-size: 0.9em;
+  --ct-inline-code-font-size: 0.85em;
   --ct-inline-code-font-style: inherit;
   --ct-inline-code-border-radius: 4px;
-  --ct-inline-code-padding: 2px 5px;
+  --ct-inline-code-padding: 2px 3px;
 }
 
 /* lists */
@@ -794,7 +795,7 @@ pre {
 }
 
 /* inline code */
-:not(pre) > code {
+div :not(pre):not(mark) > code {
   font-family: var(--ct-code-font-family);
   font-weight: normal;
   font-size: var(--ct-inline-code-font-size);
