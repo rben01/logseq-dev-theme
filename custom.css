@@ -1,6 +1,6 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Source+Code+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
-@import url("https://codemirror.net/theme/ayu-dark.css");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/codemirror-theme-vars/base.css");
 @font-face {
   font-family: "Only Emoji";
   src: local("Apple Color Emoji"), local("Android Emoji"), local("Segoe UI Emoji"), local("Segoe UI");
@@ -723,6 +723,137 @@ a:hover > .bullet-container .bullet {
   --ct-inline-code-font-style: inherit;
   --ct-inline-code-border-radius: 4px;
   --ct-inline-code-padding: 2px 3px;
+  /* Marker */
+  --cm-marker-color: var(--cm-foreground);
+  --cm-marker-opacity: 0.4;
+  --cm-marker-font-size: 0.8em;
+  /* Font */
+  /* Token Styles */
+  --cm-comment-style: italic;
+  --cm-url-decoration: underline;
+  /* Sizing */
+  --cm-tab-size: 2;
+  --cm-block-padding-x: 1em;
+  --cm-block-padding-y: 1em;
+  --cm-block-margin-x: 0;
+  --cm-block-margin-y: 0.5em;
+  --cm-block-radius: 0.3em;
+  --cm-inline-padding-x: 0.3em;
+  --cm-inline-padding-y: 0.1em;
+  --cm-inline-radius: 0.3em;
+}
+
+.CodeMirror {
+  background-color: var(--cm-background);
+  color: var(--cm-foreground);
+}
+
+.CodeMirror-gutters {
+  background: var(--cm-line-number-gutter);
+  color: var(--cm-line-number);
+  border: none;
+}
+
+.CodeMirror-guttermarker,
+.CodeMirror-guttermarker-subtle,
+.CodeMirror-linenumber {
+  color: var(--cm-line-number);
+}
+
+div.CodeMirror-selected {
+  background: var(--cm-selection-background);
+}
+
+.CodeMirror-focused div.CodeMirror-selected {
+  background: var(--cm-selection-background);
+}
+
+.CodeMirror-line::selection,
+.CodeMirror-line > span::selection,
+.CodeMirror-line > span > span::selection {
+  background: var(--cm-selection-background);
+}
+
+.CodeMirror-line::-moz-selection,
+.CodeMirror-line > span::-moz-selection,
+.CodeMirror-line > span > span::-moz-selection {
+  background: var(--cm-selection-background);
+}
+
+.CodeMirror-activeline-background {
+  background: var(--cm-line-highlight-background);
+}
+
+.cm-keyword {
+  color: var(--cm-keyword);
+}
+
+.cm-operator {
+  color: var(--cm-punctuation);
+}
+
+.cm-variable,
+.cm-variable-2,
+.cm-variable-3,
+.cm-type {
+  color: var(--cm-variable);
+}
+
+.cm-builtin {
+  color: var(--cm-builtin);
+}
+
+.cm-atom {
+  color: var(--cm-literal);
+}
+
+.cm-number {
+  color: var(--cm-number);
+}
+
+.cm-def {
+  color: var(--cm-decorator);
+}
+
+.cm-string,
+.cm-string-2 {
+  color: var(--cm-string);
+}
+
+.cm-comment {
+  color: var(--cm-comment);
+}
+
+.cm-tag {
+  color: var(--cm-property);
+}
+
+.cm-meta {
+  color: var(--cm-namespace);
+}
+
+.cm-attribute {
+  color: var(--cm-property);
+}
+
+.cm-property {
+  color: var(--cm-property);
+}
+
+.cm-qualifier {
+  color: var(--cm-keyword);
+}
+
+.cm-error {
+  color: var(--prism-deleted);
+}
+
+.CodeMirror-matchingbracket {
+  text-decoration: underline;
+}
+
+.CodeMirror-cursor {
+  border-left: 1px solid currentColor;
 }
 
 /* lists */
@@ -1175,10 +1306,6 @@ a.tooltip-priority:first-of-type::before {
   border-bottom: 1px solid #000;
 }
 
-html[data-theme=dark] #app-container::before {
-  opacity: 0.05;
-}
-
 .dark-theme,
 html[data-theme=dark] {
   --ct-primary-color: #a3cef1;
@@ -1222,6 +1349,30 @@ html[data-theme=dark] {
   --ct-header-bg-color: #272c35ee;
   --ls-selection-color: #000;
   --ls-block-highlight-color: #32445a;
+  --cm-scheme: light;
+  /* Colors */
+  --cm-foreground: rgb(255, 255, 255);
+  --cm-background: #1b1b1b;
+  /* Tokens */
+  --cm-comment: #7e9191;
+  --cm-string: #4fe27b;
+  --cm-literal: #f13252;
+  --cm-keyword: #d85fc8;
+  --cm-function: #76a5eb;
+  --cm-deleted: #db3d3d;
+  --cm-class: #d18140;
+  --cm-builtin: #20ca97;
+  --cm-property: #abc440;
+  --cm-operator: #c9d1d9;
+  --cm-decorator: #c362ff;
+  --cm-variable: #8785d4;
+  --cm-constant: #c54545;
+  --cm-interpolation: #7dafe8;
+  /* Extension */
+  --cm-line-number: #f0f0f0;
+  --cm-line-number-gutter: #1e1e1e;
+  --cm-line-highlight-background: #323125;
+  --cm-selection-background: #1a353d;
 }
 
 .dark-theme .image-resize {
@@ -1271,6 +1422,40 @@ html[data-theme=white] {
   --ls-page-properties-background-color: var(--ls-tertiary-background-color);
   --ls-selection-color: #fff;
   --ct-header-bg-color: rgba(255, 255, 255, 0.9);
+  --cm-scheme: light;
+  /* Colors */
+  --cm-foreground: #000;
+  --cm-background: #f8f8f8;
+  /* Tokens */
+  --cm-comment: #4c8181;
+  --cm-string: #07852d;
+  --cm-literal: #d81d55;
+  --cm-keyword: #b90cbf;
+  --cm-function: #0351f9;
+  --cm-deleted: #a00000;
+  --cm-class: #bb6622;
+  --cm-builtin: #008000;
+  --cm-property: #7d9029;
+  --cm-operator: #24292e;
+  --cm-decorator: #aa22ff;
+  --cm-variable: #19177c;
+  --cm-constant: #880000;
+  --cm-interpolation: #0a59b3;
+  --cm-punctuation: var(--cm-foreground);
+  --cm-number: var(--cm-literal);
+  --cm-boolean: var(--cm-literal);
+  --cm-symbol: var(--cm-literal);
+  --cm-selector: var(--cm-keyword);
+  --cm-namespace: var(--cm-class);
+  --cm-regex: var(--cm-interpolation);
+  --cm-keyword-control: var(--cm-keyword);
+  --cm-json-property: var(--cm-property);
+  --cm-inline-background: var(--cm-background);
+  /* Extension */
+  --cm-line-number: #1d1d1d;
+  --cm-line-number-gutter: #c7c7c7;
+  --cm-line-highlight-background: #ede9b1;
+  --cm-selection-background: #61c0dd;
 }
 
 :root {

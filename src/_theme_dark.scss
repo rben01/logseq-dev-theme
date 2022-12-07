@@ -1,6 +1,6 @@
-html[data-theme="dark"] #app-container::before {
-  opacity: 0.05;
-}
+// html[data-theme="dark"] #app-container::before {
+//   opacity: 0.05;
+// }
 
 .dark-theme,
 html[data-theme="dark"] {
@@ -61,6 +61,35 @@ html[data-theme="dark"] {
 
   --ls-selection-color: #000;
   --ls-block-highlight-color: #32445a;
+
+  // CodeMirror Styles
+  --cm-scheme: light;
+
+  /* Colors */
+  --cm-foreground: rgb(255, 255, 255);
+  --cm-background: #1b1b1b;
+
+  /* Tokens */
+  --cm-comment: #7e9191;
+  --cm-string: #4fe27b;
+  --cm-literal: #f13252;
+  --cm-keyword: #d85fc8;
+  --cm-function: #76a5eb;
+  --cm-deleted: #db3d3d;
+  --cm-class: #d18140;
+  --cm-builtin: #20ca97;
+  --cm-property: #abc440;
+  --cm-operator: #c9d1d9;
+  --cm-decorator: #c362ff;
+  --cm-variable: #8785d4;
+  --cm-constant: #c54545;
+  --cm-interpolation: #7dafe8;
+
+  /* Extension */
+  --cm-line-number: #f0f0f0;
+  --cm-line-number-gutter: #1e1e1e;
+  --cm-line-highlight-background: #323125;
+  --cm-selection-background: #1a353d;
 }
 
 .dark-theme .image-resize {

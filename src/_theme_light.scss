@@ -56,4 +56,44 @@ html[data-theme="white"] {
   --ls-selection-color: #fff;
 
   --ct-header-bg-color: rgba(255, 255, 255, 0.9);
+
+  // CodeMirror Styles
+  --cm-scheme: light;
+
+  /* Colors */
+  --cm-foreground: #000;
+  --cm-background: #f8f8f8;
+
+  /* Tokens */
+  --cm-comment: #4c8181;
+  --cm-string: #07852d;
+  --cm-literal: #d81d55;
+  --cm-keyword: #b90cbf;
+  --cm-function: #0351f9;
+  --cm-deleted: #a00000;
+  --cm-class: #bb6622;
+  --cm-builtin: #008000;
+  --cm-property: #7d9029;
+  --cm-operator: #24292e;
+  --cm-decorator: #aa22ff;
+  --cm-variable: #19177c;
+  --cm-constant: #880000;
+  --cm-interpolation: #0a59b3;
+
+  --cm-punctuation: var(--cm-foreground);
+  --cm-number: var(--cm-literal);
+  --cm-boolean: var(--cm-literal);
+  --cm-symbol: var(--cm-literal);
+  --cm-selector: var(--cm-keyword);
+  --cm-namespace: var(--cm-class);
+  --cm-regex: var(--cm-interpolation);
+  --cm-keyword-control: var(--cm-keyword);
+  --cm-json-property: var(--cm-property);
+  --cm-inline-background: var(--cm-background);
+
+  /* Extension */
+  --cm-line-number: #1d1d1d;
+  --cm-line-number-gutter: #c7c7c7;
+  --cm-line-highlight-background: #ede9b1;
+  --cm-selection-background: #61c0dd;
 }

@@ -1,10 +1,151 @@
-@import url("https://codemirror.net/theme/ayu-dark.css");
+@import url("https://cdn.jsdelivr.net/npm/codemirror-theme-vars/base.css");
 
 :root {
   --ct-inline-code-font-size: 0.85em;
   --ct-inline-code-font-style: inherit;
   --ct-inline-code-border-radius: 4px;
   --ct-inline-code-padding: 2px 3px;
+
+  /* Marker */
+  --cm-marker-color: var(--cm-foreground);
+  --cm-marker-opacity: 0.4;
+  --cm-marker-font-size: 0.8em;
+
+  /* Font */
+  // --cm-font-size: 1em;
+  // --cm-line-height: 1.5em;
+  // --cm-font-family: monospace;
+  // --cm-inline-font-size: var(--cm-font-size);
+  // --cm-block-font-size: var(--cm-font-size);
+
+  /* Token Styles */
+  --cm-comment-style: italic;
+  --cm-url-decoration: underline;
+
+  /* Sizing */
+  --cm-tab-size: 2;
+
+  --cm-block-padding-x: 1em;
+  --cm-block-padding-y: 1em;
+  --cm-block-margin-x: 0;
+  --cm-block-margin-y: 0.5em;
+  --cm-block-radius: 0.3em;
+  --cm-inline-padding-x: 0.3em;
+  --cm-inline-padding-y: 0.1em;
+  --cm-inline-radius: 0.3em;
+}
+
+.CodeMirror {
+  background-color: var(--cm-background);
+  color: var(--cm-foreground);
+}
+
+.CodeMirror-gutters {
+  background: var(--cm-line-number-gutter);
+  color: var(--cm-line-number);
+  border: none;
+}
+
+.CodeMirror-guttermarker,
+.CodeMirror-guttermarker-subtle,
+.CodeMirror-linenumber {
+  color: var(--cm-line-number);
+}
+
+div.CodeMirror-selected {
+  background: var(--cm-selection-background);
+}
+
+.CodeMirror-focused div.CodeMirror-selected {
+  background: var(--cm-selection-background);
+}
+
+.CodeMirror-line::selection,
+.CodeMirror-line > span::selection,
+.CodeMirror-line > span > span::selection {
+  background: var(--cm-selection-background);
+}
+
+.CodeMirror-line::-moz-selection,
+.CodeMirror-line > span::-moz-selection,
+.CodeMirror-line > span > span::-moz-selection {
+  background: var(--cm-selection-background);
+}
+
+.CodeMirror-activeline-background {
+  background: var(--cm-line-highlight-background);
+}
+
+.cm-keyword {
+  color: var(--cm-keyword);
+}
+
+.cm-operator {
+  color: var(--cm-punctuation);
+}
+
+.cm-variable,
+.cm-variable-2,
+.cm-variable-3,
+.cm-type {
+  color: var(--cm-variable);
+}
+
+.cm-builtin {
+  color: var(--cm-builtin);
+}
+
+.cm-atom {
+  color: var(--cm-literal);
+}
+
+.cm-number {
+  color: var(--cm-number);
+}
+
+.cm-def {
+  color: var(--cm-decorator);
+}
+
+.cm-string,
+.cm-string-2 {
+  color: var(--cm-string);
+}
+
+.cm-comment {
+  color: var(--cm-comment);
+}
+
+.cm-tag {
+  color: var(--cm-property);
+}
+
+.cm-meta {
+  color: var(--cm-namespace);
+}
+
+.cm-attribute {
+  color: var(--cm-property);
+}
+
+.cm-property {
+  color: var(--cm-property);
+}
+
+.cm-qualifier {
+  color: var(--cm-keyword);
+}
+
+.cm-error {
+  color: var(--prism-deleted);
+}
+
+.CodeMirror-matchingbracket {
+  text-decoration: underline;
+}
+
+.CodeMirror-cursor {
+  border-left: 1px solid currentColor;
 }
 
 /* lists */
