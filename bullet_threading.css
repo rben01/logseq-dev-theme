@@ -69,7 +69,6 @@
 }
 .ls-block div.items-center {
   position: relative;
-  height: 26px !important;
 }
 .ls-block > .items-baseline {
   align-items: initial;
