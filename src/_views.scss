@@ -126,3 +126,12 @@
   font-size: 0.875rem;
   font-weight: 400;
 }
+
+#main-content-container {
+  margin-top: calc(var(--awUI-tabs-height) + var(--awUI-head-height)) !important;
+  padding-top: 40px !important;
+
+  & div.cp__sidebar-main-content {
+    margin-top: 0 !important;
+  }
+}
