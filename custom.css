@@ -669,6 +669,10 @@ a:hover > .bullet-container .bullet {
   transform: scale(0.9);
 }
 
+.page-reference {
+  padding: 0;
+}
+
 /* embed */
 .embed,
 .embed-page,
