@@ -87,6 +87,7 @@ html.is-native-iphone #left-sidebar {
 }
 
 .cp__header,
+.cp__header#head,
 .cp__right-sidebar-topbar {
   background: var(--ct-header-bg-color);
 }
