@@ -752,8 +752,19 @@ strong {
 }
 
 /* External links */
-.external-link {
+a.external-link {
   color: var(--ls-external-link-color);
+  padding: 0 2px 0 4px;
+  border-radius: 3px;
+  border: 0;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+a.external-link:hover {
+  text-decoration-thickness: 2px;
 }
 
 .external-link:hover {
