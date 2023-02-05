@@ -241,6 +241,19 @@ html.is-native-iphone #left-sidebar {
   font-weight: 400;
 }
 
+.left-sidebar-inner .nav-content-item .nav-content-item-inner .bd ul {
+  list-style-type: "−";
+}
+
+.left-sidebar-inner .nav-content-item .nav-content-item-inner .bd ul > li {
+  margin: 4px 24px 4px calc(24px + 1.25rem);
+  padding-left: 8px;
+}
+
+.left-sidebar-inner .nav-content-item .nav-content-item-inner .bd ul a {
+  padding: 0;
+}
+
 #main-content-container {
   margin-top: calc(var(--awUI-tabs-height) + var(--awUI-head-height)) !important;
   padding-top: 40px !important;
