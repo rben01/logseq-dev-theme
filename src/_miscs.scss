@@ -360,3 +360,11 @@ div.CodeMirror-selected {
 .page-icon {
   font-family: "Inter", sans-serif;
 }
+
+// fixes katex padding
+.katex > .katex-html > .base {
+  overflow: hidden;
+  height: 1em;
+  margin-bottom: -0.1em;
+  padding: 0;
+}
