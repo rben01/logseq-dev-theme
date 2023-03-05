@@ -140,8 +140,11 @@
   padding: 0;
 }
 
-#main-content-container {
+#main-content.cp__sidebar-main-layout {
   margin-top: calc(var(--awUI-tabs-height) + var(--awUI-head-height)) !important;
+}
+
+#main-content-container {
   padding-top: 40px !important;
 
   & div.cp__sidebar-main-content {

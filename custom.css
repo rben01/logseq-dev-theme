@@ -254,8 +254,11 @@ html.is-native-iphone #left-sidebar {
   padding: 0;
 }
 
-#main-content-container {
+#main-content.cp__sidebar-main-layout {
   margin-top: calc(var(--awUI-tabs-height) + var(--awUI-head-height)) !important;
+}
+
+#main-content-container {
   padding-top: 40px !important;
 }
 #main-content-container div.cp__sidebar-main-content {
@@ -994,12 +997,14 @@ a.tag:hover {
   border-radius: 4px;
 }
 
-/* Page properties */
-.page-properties,
-.block-properties {
+/* Page properties; body is to slightly increase specifity in the face of the
+AwesomeProps plugin. !important are also to override the plugin's styles */
+body :is(.page-properties, .block-properties) {
   margin: 0 0 0.5em;
+  padding: 4px 8px;
   font-size: 0.8em;
-  background: var(--ls-secondary-background-color);
+  border: none !important;
+  background: var(--ls-secondary-background-color) !important;
   width: fit-content;
   padding-right: 2rem;
   max-width: var(--ct-block-max-width);
