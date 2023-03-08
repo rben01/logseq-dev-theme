@@ -254,7 +254,7 @@ html.is-native-iphone #left-sidebar {
   padding: 0;
 }
 
-#main-content.cp__sidebar-main-layout {
+#main-container.cp__sidebar-main-layout {
   margin-top: calc(var(--awUI-tabs-height) + var(--awUI-head-height)) !important;
 }
 
