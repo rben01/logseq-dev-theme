@@ -4,11 +4,13 @@
 }
 
 /* block reference */
-.block-ref {
+.block-ref,
+.block-ref > .block-content.inline {
   display: inline;
   font-size: inherit;
   border-bottom-color: var(--ct-primary-color);
-  border-bottom-style: dashed;
+  border-bottom-style: dotted;
+  border-bottom-width: 1.5px;
 }
 
 .block-body {
