@@ -101,6 +101,10 @@
   padding-top: var(--ct-header-height);
 }
 
+#left-sidebar > .left-sidebar-inner {
+  padding-top: 0;
+}
+
 .left-sidebar-inner {
   height: 100%;
 }
@@ -150,4 +154,8 @@
   & div.cp__sidebar-main-content {
     margin-top: 0 !important;
   }
+}
+
+#logseq-tabs_lsp_main.lsp-iframe-sandbox-container[data-pid="logseq-tabs"] {
+  background-color: var(--ls-secondary-background-color);
 }

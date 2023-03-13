@@ -56,7 +56,7 @@ a.title h1.title {
 }
 
 .cp__header.electron-mac {
-  height: var(--ct-header-height);
+  height: calc(var(--ls-headbar-height) + var(--ls-headbar-inner-top-padding));
 }
 
 #search {
