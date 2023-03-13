@@ -1,6 +1,6 @@
 @charset "UTF-8";
-@import url("https://rben01.github.io/Iosevka/dist/iosevka-rltb-mono/iosevka-rltb-mono.css");
-@import url("https://rben01.github.io/Iosevka/dist/iosevka-rltb-proportional-sans/iosevka-rltb-proportional-sans.css");
+@import url("https://iosevka-rltb.pages.dev/dist/iosevka-rltb-mono/font-cloudflare.css");
+@import url("https://rsms.me/inter/inter.css");
 @import url("https://cdn.jsdelivr.net/npm/codemirror-theme-vars/base.css");
 @font-face {
   font-family: "Only Emoji";
@@ -11,11 +11,10 @@
   --ct-text-size: 17px;
   --ct-line-height: 1.4;
   --ct-font-weight: 400;
-  --ls-font-family: "Only Emoji", "Iosevka RLTB Sans Web", "Figtree", "Source Sans Pro",
-    sans-serif;
+  --ls-font-family: "Only Emoji", "Inter", sans-serif;
   --ct-page-title-font-family: var(--ls-font-family);
   --ct-block-ref-font-family: var(--ct-page-title-font-family);
-  --ct-code-font-family: "Iosevka RLTB Mono", monospace;
+  --ct-code-font-family: "Iosevka RLTB Web", monospace;
   --favicons: none;
   /* disable favicons provided by https://github.com/0x7b1/logseq-plugin-automatic-url-title */
 }
@@ -29,6 +28,7 @@ body {
   -webkit-font-smoothing: auto;
   line-height: var(--ct-line-height);
   font-weight: var(--ct-font-weight);
+  font-feature-settings: "case", "ss03", "ss04", "cv02", "cv03", "cv04";
 }
 
 textarea {
@@ -215,6 +215,10 @@ html.is-native-iphone #left-sidebar {
   padding-top: var(--ct-header-height);
 }
 
+#left-sidebar > .left-sidebar-inner {
+  padding-top: 0;
+}
+
 .left-sidebar-inner {
   height: 100%;
 }
@@ -263,6 +267,10 @@ html.is-native-iphone #left-sidebar {
 }
 #main-content-container div.cp__sidebar-main-content {
   margin-top: 0 !important;
+}
+
+#logseq-tabs_lsp_main.lsp-iframe-sandbox-container[data-pid=logseq-tabs] {
+  background-color: var(--ls-secondary-background-color);
 }
 
 :root {
@@ -321,7 +329,7 @@ a.title h1.title {
 }
 
 .cp__header.electron-mac {
-  height: var(--ct-header-height);
+  height: calc(var(--ls-headbar-height) + var(--ls-headbar-inner-top-padding));
 }
 
 #search {
@@ -960,6 +968,9 @@ samp {
   font-family: var(--ct-code-font-family);
   font-size: 0.8em;
   font-weight: normal;
+  font-feature-settings: normal;
+  font-stretch: expanded;
+  /* for Iosevka */
 }
 
 pre {

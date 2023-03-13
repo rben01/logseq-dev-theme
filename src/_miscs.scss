@@ -229,6 +229,8 @@ samp {
   font-family: var(--ct-code-font-family);
   font-size: 0.8em;
   font-weight: normal;
+  font-feature-settings: normal;
+  font-stretch: expanded; /* for Iosevka */
 }
 
 pre {

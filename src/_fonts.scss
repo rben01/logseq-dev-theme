@@ -1,5 +1,5 @@
-@import url("https://rben01.github.io/Iosevka/dist/iosevka-rltb-mono/iosevka-rltb-mono.css");
-@import url("https://rben01.github.io/Iosevka/dist/iosevka-rltb-proportional-sans/iosevka-rltb-proportional-sans.css");
+@import url("https://iosevka-rltb.pages.dev/dist/iosevka-rltb-mono/font-cloudflare.css");
+@import url("https://rsms.me/inter/inter.css");
 
 @font-face {
   font-family: "Only Emoji";
@@ -44,11 +44,10 @@
   --ct-text-size: 17px;
   --ct-line-height: 1.4;
   --ct-font-weight: 400;
-  --ls-font-family: "Only Emoji", "Iosevka RLTB Sans Web", "Figtree", "Source Sans Pro",
-    sans-serif;
+  --ls-font-family: "Only Emoji", "Inter", sans-serif;
   --ct-page-title-font-family: var(--ls-font-family);
   --ct-block-ref-font-family: var(--ct-page-title-font-family);
-  --ct-code-font-family: "Iosevka RLTB Mono", monospace;
+  --ct-code-font-family: "Iosevka RLTB Web", monospace;
   --favicons: none; /* disable favicons provided by https://github.com/0x7b1/logseq-plugin-automatic-url-title */
 }
 
@@ -61,7 +60,11 @@ body {
   -webkit-font-smoothing: auto;
   line-height: var(--ct-line-height);
   font-weight: var(--ct-font-weight);
-  // font-variation-settings: "WDTH" 90;
+
+  font-feature-settings: /* case-sensitive forms */ "case",
+    /* curved r when followed by round letter */ "ss03",
+    /* add bars to I and hook/tail to l */ "ss04",
+    /* open 4, 6, 9, respectively */ "cv02", "cv03", "cv04";
 }
 
 textarea {
