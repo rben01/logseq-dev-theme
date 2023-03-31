@@ -29,6 +29,10 @@
   display: inline;
 }
 
+.block-ref .block-body > .cp__fenced-code-block div {
+  display: block !important;
+}
+
 .block-ref .flex.flex-row.justify-between {
   display: inline;
 }
@@ -136,4 +140,19 @@ a:hover > .bullet-container .bullet {
 
 .page-reference {
   padding: 0;
+}
+
+// https://github.com/pengx17/logseq-dev-theme/issues/77
+// add space between content, time cost and scheduled date when references
+.block-ref a.fade-link::before,
+.block-ref a.fade-link::after,
+.block-ref .timestamp .opacity-80::before,
+.block-ref .timestamp .opacity-80::after {
+  content: "    ";
+}
+
+.block-ref a.fade-link,
+.block-ref .timestamp-label,
+.block-ref .timestamp .opacity-80 {
+  font-size: 75% !important;
 }

@@ -286,6 +286,7 @@ body :is(.page-properties, .block-properties) {
   .page-properties,
   .block-properties {
     background: var(--ls-tertiary-background-color);
+    --ls-page-properties-background-color: var(--ls-tertiary-background-color);
   }
 }
 

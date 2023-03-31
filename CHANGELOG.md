@@ -1,3 +1,31 @@
+## [1.26.16](https://github.com/pengx17/logseq-dev-theme/compare/v1.26.15...v1.26.16) (2023-02-18)
+
+
+### Bug Fixes
+
+* bump version ([b23f701](https://github.com/pengx17/logseq-dev-theme/commit/b23f7011a4753f213cecb14667ad3b27bce20ac4))
+
+## [1.26.15](https://github.com/pengx17/logseq-dev-theme/compare/v1.26.14...v1.26.15) (2022-12-14)
+
+
+### Bug Fixes
+
+* **scheduled:** add space between content, time cost and scheduled date when references ([52a9a15](https://github.com/pengx17/logseq-dev-theme/commit/52a9a15e9085664788a219822a58b64956f9c857))
+
+## [1.26.14](https://github.com/pengx17/logseq-dev-theme/compare/v1.26.13...v1.26.14) (2022-12-14)
+
+
+### Bug Fixes
+
+* **blocks:** code block references are not displayed properly ([4c62445](https://github.com/pengx17/logseq-dev-theme/commit/4c62445b03ee0e2e84b4c6d3d640cb953695a37d))
+
+## [1.26.13](https://github.com/pengx17/logseq-dev-theme/compare/v1.26.12...v1.26.13) (2022-11-07)
+
+
+### Bug Fixes
+
+* style issues ([620ea7c](https://github.com/pengx17/logseq-dev-theme/commit/620ea7cf0580c4d9839290451908397042fa9fcb)), closes [#79](https://github.com/pengx17/logseq-dev-theme/issues/79)
+
 ## [1.26.12](https://github.com/pengx17/logseq-dev-theme/compare/v1.26.11...v1.26.12) (2022-07-12)
 
 
