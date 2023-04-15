@@ -11,7 +11,9 @@
   --ct-text-size: 17px;
   --ct-line-height: 1.4;
   --ct-font-weight: 400;
-  --ls-font-family: "Only Emoji", "Inter", sans-serif;
+  --ls-font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Only Emoji", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
   --ct-page-title-font-family: var(--ls-font-family);
   --ct-block-ref-font-family: var(--ct-page-title-font-family);
   --ct-code-font-family: "Iosevka RLTB Web", monospace;
