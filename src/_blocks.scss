@@ -3,6 +3,11 @@
   --ct-block-max-width: calc(100% - 38px);
 }
 
+#root .block-content.inline span.inline {
+  display: block; // 😕
+  overflow-y: clip;
+}
+
 /* block reference */
 .block-ref,
 .block-ref > .block-content.inline {
