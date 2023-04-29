@@ -1,6 +1,6 @@
 @charset "UTF-8";
-@import url("https://iosevka-rltb.pages.dev/dist/iosevka-rltb-mono/font-cloudflare.css");
-@import url("https://rsms.me/inter/inter.css");
+@import url("https://my-fonts.pages.dev/Iosevka/iosevka-rltb-mono/iosevka.css");
+@import url("https://my-fonts.pages.dev/Rotunda/rotunda.css");
 @import url("https://cdn.jsdelivr.net/npm/codemirror-theme-vars/base.css");
 @font-face {
   font-family: "Only Emoji";
@@ -10,8 +10,8 @@
 :root {
   --ct-text-size: 17px;
   --ct-line-height: 1.4;
-  --ct-font-weight: 400;
-  --ls-font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  --ct-font-weight: 350;
+  --ls-font-family: "Rotunda", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Helvetica, Arial, sans-serif, "Only Emoji", "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
   --ct-page-title-font-family: var(--ls-font-family);
@@ -30,7 +30,7 @@ body {
   -webkit-font-smoothing: auto;
   line-height: var(--ct-line-height);
   font-weight: var(--ct-font-weight);
-  font-feature-settings: "case", "ss03", "ss04", "cv02", "cv03", "cv04";
+  font-feature-settings: "cv01" on, "cv02" on, "cv03" on, "cv04" on;
 }
 
 textarea {
@@ -424,6 +424,11 @@ a.title h1.title {
 :root {
   --ct-bullet-size: 6px;
   --ct-block-max-width: calc(100% - 38px);
+}
+
+#root .block-content.inline span.inline {
+  display: block;
+  overflow-y: clip;
 }
 
 /* block reference */
@@ -973,9 +978,6 @@ div.CodeMirror-selected {
 }
 
 .katex > .katex-html > .base {
-  overflow: hidden;
-  height: 1em;
-  margin-bottom: -0.1em;
   padding: 0;
 }
 

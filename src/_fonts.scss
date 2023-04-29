@@ -1,5 +1,5 @@
-@import url("https://iosevka-rltb.pages.dev/dist/iosevka-rltb-mono/font-cloudflare.css");
-@import url("https://rsms.me/inter/inter.css");
+@import url("https://my-fonts.pages.dev/Iosevka/iosevka-rltb-mono/iosevka.css");
+@import url("https://my-fonts.pages.dev/Rotunda/rotunda.css");
 
 @font-face {
   font-family: "Only Emoji";
@@ -43,8 +43,8 @@
 :root {
   --ct-text-size: 17px;
   --ct-line-height: 1.4;
-  --ct-font-weight: 400;
-  --ls-font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  --ct-font-weight: 350;
+  --ls-font-family: "Rotunda", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Helvetica, Arial, sans-serif, "Only Emoji", "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
   --ct-page-title-font-family: var(--ls-font-family);
@@ -63,10 +63,17 @@ body {
   line-height: var(--ct-line-height);
   font-weight: var(--ct-font-weight);
 
-  font-feature-settings: /* case-sensitive forms */ "case",
-    /* curved r when followed by round letter */ "ss03",
-    /* add bars to I and hook/tail to l */ "ss04",
-    /* open 4, 6, 9, respectively */ "cv02", "cv03", "cv04";
+  // for Rotunda
+  font-feature-settings: "cv01" on, "cv02" on, "cv03" on, "cv04" on;
+
+  // for Figtree
+  // font-feature-settings: "ss02";
+
+  // for Inter
+  // font-feature-settings: /* case-sensitive forms */ "case",
+  //   /* curved r when followed by round letter */ "ss03",
+  //   /* add bars to I and hook/tail to l */ "ss04",
+  //   /* open 4, 6, 9, respectively */ "cv02";
 }
 
 textarea {
