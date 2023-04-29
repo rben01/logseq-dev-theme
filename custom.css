@@ -1121,9 +1121,6 @@ div.CodeMirror-selected {
 }
 
 .katex > .katex-html > .base {
-  overflow: hidden;
-  height: 1em;
-  margin-bottom: -0.1em;
   padding: 0;
 }
 
