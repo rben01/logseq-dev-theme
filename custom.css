@@ -30,7 +30,7 @@ body {
   -webkit-font-smoothing: auto;
   line-height: var(--ct-line-height);
   font-weight: var(--ct-font-weight);
-  font-feature-settings: "cv01" on, "cv02" on, "cv03" on, "cv04" on;
+  font-feature-settings: "cv01" on, "cv02" on, "cv03" on;
 }
 
 textarea {
@@ -572,11 +572,6 @@ a.title h1.title {
 :root {
   --ct-bullet-size: 6px;
   --ct-block-max-width: calc(100% - 38px);
-}
-
-#root .block-content.inline span.inline {
-  display: block;
-  overflow-y: clip;
 }
 
 /* block reference */
