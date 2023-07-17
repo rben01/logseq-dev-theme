@@ -1,4 +1,5 @@
-@import url("https://my-fonts.pages.dev/Iosevka/iosevka-rltb-mono/iosevka.css");
+// @import url("https://my-fonts.pages.dev/Iosevka/iosevka-rltb-mono/iosevka.css");
+@import url("https://my-fonts.pages.dev/CommitMono/commit-mono.css");
 @import url("https://my-fonts.pages.dev/Rotunda/rotunda.css");
 
 @font-face {
@@ -42,14 +43,15 @@
 
 :root {
   --ct-text-size: 17px;
-  --ct-line-height: 1.4;
+  --ct-line-height: 1.45;
   --ct-font-weight: 350;
   --ls-font-family: "Rotunda", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Helvetica, Arial, sans-serif, "Only Emoji", "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
   --ct-page-title-font-family: var(--ls-font-family);
   --ct-block-ref-font-family: var(--ct-page-title-font-family);
-  --ct-code-font-family: "Iosevka RLTB Web", monospace;
+  --ct-code-font-family: "Commit Mono", "Iosevka RLTB Web", monospace;
+  --commit-mono-cv: "cv08" on;
   --favicons: none; /* disable favicons provided by https://github.com/0x7b1/logseq-plugin-automatic-url-title */
 }
 

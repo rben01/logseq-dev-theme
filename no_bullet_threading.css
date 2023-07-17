@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://my-fonts.pages.dev/Iosevka/iosevka-rltb-mono/iosevka.css");
+@import url("https://my-fonts.pages.dev/CommitMono/commit-mono.css");
 @import url("https://my-fonts.pages.dev/Rotunda/rotunda.css");
 @import url("https://cdn.jsdelivr.net/npm/codemirror-theme-vars/base.css");
 @font-face {
@@ -9,16 +9,16 @@
 }
 :root {
   --ct-text-size: 17px;
-  --ct-line-height: 1.4;
+  --ct-line-height: 1.45;
   --ct-font-weight: 350;
   --ls-font-family: "Rotunda", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Helvetica, Arial, sans-serif, "Only Emoji", "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
   --ct-page-title-font-family: var(--ls-font-family);
   --ct-block-ref-font-family: var(--ct-page-title-font-family);
-  --ct-code-font-family: "Iosevka RLTB Web", monospace;
-  --favicons: none;
-  /* disable favicons provided by https://github.com/0x7b1/logseq-plugin-automatic-url-title */
+  --ct-code-font-family: "Commit Mono", "Iosevka RLTB Web", monospace;
+  --commit-mono-cv: "cv08" on;
+  --favicons: none; /* disable favicons provided by https://github.com/0x7b1/logseq-plugin-automatic-url-title */
 }
 
 html,
@@ -61,17 +61,14 @@ i {
   html {
     font-size: 14px;
   }
-
   .cp__sidebar-main-content > div {
     padding: 1px 1em 1em 1em !important;
     border: none;
   }
-
   a.title h1.title {
     font-size: 24px;
     margin-bottom: 1rem;
   }
-
   .custom-query {
     padding: 0 1rem;
   }
@@ -575,7 +572,7 @@ a:hover > .bullet-container .bullet {
 .embed,
 .embed-page,
 .embed-block {
-  box-shadow: 1px 2px black;
+  box-shadow: 1px 2px rgb(0, 0, 0);
   padding: 0.75em 0.5em;
   border: 2px solid #000;
   border-radius: 8px;
@@ -584,7 +581,7 @@ a:hover > .bullet-container .bullet {
 }
 
 :is(.embed, .embed-page, .embed-block):is(:hover, :focus-within) {
-  box-shadow: 8px 8px black;
+  box-shadow: 8px 8px rgb(0, 0, 0);
   transform: translate(-7px, -6px);
 }
 
@@ -841,9 +838,7 @@ samp {
   font-family: var(--ct-code-font-family);
   font-size: 0.8em;
   font-weight: normal;
-  font-feature-settings: normal;
-  font-stretch: expanded;
-  /* for Iosevka */
+  font-feature-settings: var(--commit-mono-cv);
 }
 
 pre {
@@ -860,6 +855,7 @@ div :not(pre):not(mark) > code {
   padding: var(--ct-inline-code-padding) !important;
   background: var(--ls-tertiary-background-color);
   color: var(--ct-inline-code-color);
+  font-feature-settings: var(--commit-mono-cv);
 }
 
 /* Tags */
@@ -928,12 +924,26 @@ progress::-webkit-progress-value {
   font-family: var(--ct-code-font-family);
   font-size: 0.95rem;
   font-weight: normal;
-  line-height: 16px;
+  line-height: 1.1em;
+  font-feature-settings: var(--commit-mono-cv);
+}
+
+.CodeMirror-scroll {
+  padding-top: 8px;
+  padding-bottom: 54px;
 }
 
 div.CodeMirror-selected {
   background: var(--ct-primary-color);
   color: var(--ls-selection-color);
+}
+
+.CodeMirror .CodeMirror-sizer {
+  margin-left: 36px !important;
+}
+
+.CodeMirror .CodeMirror-linenumber {
+  left: -9px !important;
 }
 
 .CodeMirror {
@@ -943,6 +953,7 @@ div.CodeMirror-selected {
 
 .extensions__code {
   margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .extensions__code-calc {
@@ -974,6 +985,14 @@ div.CodeMirror-selected {
 
 .katex > .katex-html > .base {
   padding: 0;
+}
+
+body .admonitionblock {
+  margin: 0.75rem 0;
+}
+
+.admonitionblock .text-lg .is-paragraph {
+  font-size: var(--ct-text-size);
 }
 
 /* Popups */
@@ -1021,8 +1040,7 @@ div.CodeMirror-selected {
 }
 
 .tippy-popper .arrow-regular {
-  display: none;
-  /* Hide the arrow */
+  display: none; /* Hide the arrow */
 }
 
 /* FIXME: this is a hack to remove scroll passed to scroll bottom issue */
@@ -1150,8 +1168,7 @@ div.CodeMirror-selected {
 
 a[priority],
 a.priority {
-  font-size: 0px;
-  /* Hide text */
+  font-size: 0px; /* Hide text */
 }
 
 a[priority=A]::before,
@@ -1224,7 +1241,7 @@ body[data-page=graph] .cp__sidebar-main-content > div {
 
 .graph-filters {
   border: 2px solid #000;
-  box-shadow: 4px 4px black;
+  box-shadow: 4px 4px rgb(0, 0, 0);
   border-radius: 8px;
 }
 .graph-filters li:not(:last-of-type) {
